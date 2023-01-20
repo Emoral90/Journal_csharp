@@ -12,6 +12,8 @@ The goal of this program will be to aid in a person's goal to be consistent in m
     * "Who was the most interesting person I interacted with today?"
     * "What was the best part of my day"
     * "How did I see the hand of the Lord in my life today?"
-    * ""
-    * ""
+    * "What was the strongest emotion I felt today?"
+    * "I have one thing I could do over today, what would it be?"
+
+There will be multiple `.cs` files found in the Journal directory. [Program.cs]() will contain the driver class, and the [Journal.cs]() will contain the program logic.
 
