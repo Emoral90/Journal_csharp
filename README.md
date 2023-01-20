@@ -2,7 +2,7 @@
 The goal of this program will be to aid in a person's goal to be consistent in maintaining a daily journal as a new year's goal.
 ## Functional Requirements
 1. Write a new entry
-    * By displaying a randomly selected prompt from a list
+    * By displaying a randomly selected prompt from a list, save the response along with that prompt, and the date as one entry
 2. Display all journal entries
 3. Load the whole journal from a file
     * By prompting the user for a filename and save the current journal
