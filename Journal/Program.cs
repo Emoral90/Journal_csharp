@@ -1,23 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class Program{
     static void Main(){
-        string myChoice;
+        // string myChoice;
 
         Journal journal = new Journal();
-        myChoice = journal.menu();
+        // myChoice = journal.menu();
+        journal.prompt_entry();
 
-        if (myChoice == "1"){
+        // if (myChoice == "1"){
+        //     my_list = journal.prompt_entry();
             
-        }
+        //     foreach (string prompt in my_list){
+        //         Console.WriteLine(prompt);
+        //     }
+        // }
     }
-
-    // static void validate_user_input(string input){
-    //     string input_str;
-    //     bool valid = string.TryParse(input, out input_str);
-
-    //     while (!valid){
-    //         Console.WriteLine("Invalid input. ");
-    //     }
-    // }
 }

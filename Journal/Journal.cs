@@ -4,12 +4,26 @@ using System.Collections.Generic;
 public class Journal{
     // Attributes
     string user_input;
+    string[] prompts = {
+        "How did I save money today?", 
+        "Where did I find happiness?", 
+        "Did I talk with a cute girl?", 
+        "How did I wake up today?", 
+        "What was the best part of my day?"
+        };
+    
 
     // Constructor
     public Journal(){}
 
     // Methods
-    public string prompt_entry(){}
+    public void prompt_entry(){
+
+        foreach (string prompt in prompts)
+        {
+            Console.WriteLine(prompt);   
+        }
+    }
 
     // public void display_entries(){}
 
