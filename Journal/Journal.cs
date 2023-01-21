@@ -19,7 +19,7 @@ public class Journal{
     public Journal(){}
 
     // Methods
-    public Tuple<string, string> prompt_entry(){
+    public string prompt_entry(){
         // Instantiate the Random class
         Random rand = new Random();
         int random_number = rand.Next(4);
@@ -29,34 +29,19 @@ public class Journal{
         Console.WriteLine(prompts[random_number]);
         journal_entry = Console.ReadLine();
 
-        // Prompt user for date and save to variable
-        Console.WriteLine("Enter date: MM/DD/YYYY");
-        date = Console.ReadLine();
+        // // Prompt user for date and save to variable
+        // Console.WriteLine("Enter date: MM/DD/YYYY");
+        // date = Console.ReadLine();
 
-        return new Tuple<string, string>(journal_entry, date);
+        // return new Tuple<string, string>(journal_entry, date);
+        return journal_entry;
     }
 
-    public void display_entries(){}
-
-    public string load_journal(){}
-
-    public void save_journal(){}
-
-    public string menu(){
-        while (user_input != "5"){
-            Console.WriteLine();
-            Console.WriteLine(" - - - - - - - Main Menu - - - - - - - -");
-            Console.WriteLine("========================================");
-            Console.WriteLine("1) Write a new entry");
-            Console.WriteLine("2) Display Journal");
-            Console.WriteLine("3) Load Journal from file");
-            Console.WriteLine("4) Save Journal to file");
-            Console.WriteLine("5) Quit");
-            Console.WriteLine();
-            
-            user_input = Console.ReadLine();
-            // break;
-        }
-        return user_input;
+    public void display_entries(Tuple<string, string> theStuff){
+        Console.WriteLine(theStuff);
     }
+
+    // public string load_journal(){}
+
+    // public void save_journal(){}
 }
