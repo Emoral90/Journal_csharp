@@ -25,7 +25,8 @@ public class Journal{
         int random_number = rand.Next(4);
 
         // Provide randomly chosen prompt and save entry
-        Console.WriteLine("Prompt:");
+        Console.WriteLine("Provide in the following format:");
+        Console.WriteLine("prompt answer,MM.DD.YYYY");
         Console.WriteLine(prompts[random_number]);
         journal_entry = Console.ReadLine();
 
@@ -41,7 +42,18 @@ public class Journal{
         Console.WriteLine(theStuff);
     }
 
-    // public string load_journal(){}
+    public void load_journal(string file){
+        file = "Entries.txt";
+        string[] lines = System.IO.ReadAllLines(file);
+
+        foreach (string line in lines){
+            string[] parts = line.Split(",");
+            string answer = parts[0];
+            string date = parts[1];
+        }
+
+        
+    }
 
     // public void save_journal(){}
 }
