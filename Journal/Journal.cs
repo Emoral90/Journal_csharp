@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class Journal{
     // Attributes
     string user_input;
+    string journal_entry;
+    string date;
     string[] prompts = {
         "How did I save money today?", 
         "Where did I find happiness?", 
@@ -17,19 +19,28 @@ public class Journal{
     public Journal(){}
 
     // Methods
-    public void prompt_entry(){
+    public Tuple<string, string> prompt_entry(){
+        // Instantiate the Random class
+        Random rand = new Random();
+        int random_number = rand.Next(4);
 
-        foreach (string prompt in prompts)
-        {
-            Console.WriteLine(prompt);   
-        }
+        // Provide randomly chosen prompt and save entry
+        Console.WriteLine("Prompt:");
+        Console.WriteLine(prompts[random_number]);
+        journal_entry = Console.ReadLine();
+
+        // Prompt user for date and save to variable
+        Console.WriteLine("Enter date: MM/DD/YYYY");
+        date = Console.ReadLine();
+
+        return new Tuple<string, string>(journal_entry, date);
     }
 
-    // public void display_entries(){}
+    public void display_entries(){}
 
-    // public string load_journal(){}
+    public string load_journal(){}
 
-    // public void save_journal(){}
+    public void save_journal(){}
 
     public string menu(){
         while (user_input != "5"){
@@ -44,6 +55,7 @@ public class Journal{
             Console.WriteLine();
             
             user_input = Console.ReadLine();
+            // break;
         }
         return user_input;
     }
