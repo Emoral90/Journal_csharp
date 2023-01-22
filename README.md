@@ -15,5 +15,5 @@ The goal of this program will be to aid in a person's goal to be consistent in m
     * "What was the strongest emotion I felt today?"
     * "I have one thing I could do over today, what would it be?"
 
-There will be multiple `.cs` files found in the Journal directory. [Program.cs]() will contain the driver class, [Journal.cs]() will contain the program logic, and [Interactor]() will only contain the attributes and methods to be interacted with by the user.
+There will be multiple `.cs` files found in the Journal directory. [Program.cs](https://github.com/Emoral90/Journal_csharp/blob/main/Journal/Program.cs) will contain the driver class, [Journal.cs](https://github.com/Emoral90/Journal_csharp/blob/main/Journal/Journal.cs) will contain the program logic, and [Interactor](https://github.com/Emoral90/Journal_csharp/blob/main/Journal/Interactor.cs) will only contain the attributes and methods to be interacted with by the user.
 
