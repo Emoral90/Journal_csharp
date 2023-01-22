@@ -28,11 +28,13 @@ public class Journal{
 
     }
 
+    // Display the previously made journal entry
     public void display_entries(string prompt_answer, string date){
         Console.WriteLine($"Your entry: {prompt_answer}");
         Console.WriteLine($"Date enterd: {date}");
     }
 
+    // Load the journal from a text file
     public void load_journal(File file){
         file = "Entries.txt";
         string[] lines = System.IO.ReadAllLines(file);
@@ -46,6 +48,7 @@ public class Journal{
         
     }
 
+    // Save the previously made journal entry to a file
     public void save_journal(string journal_entry, string date){
         using(StreamWriter out_file = new StreamWriter(journal_entry)){
             out_file.WriteLine(journal_entry);

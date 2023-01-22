@@ -1,5 +1,3 @@
-// using DateTime;
-
 public class Interactor{
     string prompt_answer;
     string date;
@@ -11,8 +9,7 @@ public class Interactor{
 
     public string get_date(){
         Console.WriteLine("Enter the date as: MM/DD/YYYY");
-        // DateTime currentTime = DateTime.Now;
-        date = Console.ReadLine();
+s        date = Console.ReadLine();
         return date;
     }
 }
