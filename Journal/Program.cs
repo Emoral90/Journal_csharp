@@ -7,9 +7,11 @@ public class Program{
         string myChoice = "";
         // Tuple<string, string> myEntry;
         string myEntry;
+        string specDate;
 
-        // Constructor
+        // Constructors
         Journal journal = new Journal();
+        Interactor interactor = new Interactor();
 
         // Main logic loop
         while (myChoice != "5"){
@@ -26,19 +28,19 @@ public class Program{
             myChoice = Console.ReadLine();
 
             if (myChoice == "1"){
-            // Console.WriteLine(journal.prompt_entry());
-            myEntry = journal.prompt_entry();
+                journal.display_prompt();
+                myEntry = interactor.get_prompt_answer();
+                specDate = interactor.get_date();
             }
             else if (myChoice == "2"){
-                journal.display_entries(myEntry);
+                journal.display_entries(myEntry, specDate);
             }
-            // else if (myChoice == "3"){
-            //     journal.load_journal();
-            // }
-            // else if (myChoice == "4"){
-            //     journal.save_journal();
-            // }
-
+            else if (myChoice == "3"){
+                journal.load_journal("Entries.txt");
+            }
+            else if (myChoice == "4"){
+                journal.save_journal(myEntry, specDate);
+            }
 
         }
 
