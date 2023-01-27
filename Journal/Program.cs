@@ -6,8 +6,8 @@ public class Program{
         // GLOBAL VARIABLES
         string myChoice = "";
         // Tuple<string, string> myEntry;
-        string myEntry;
-        string specDate;
+        string myEntry = "";
+        string specDate = "";
 
         // Constructors
         Journal journal = new Journal();
@@ -32,15 +32,18 @@ public class Program{
                 myEntry = interactor.get_prompt_answer();
                 specDate = interactor.get_date();
             }
+
             else if (myChoice == "2"){
-                journal.display_entries(myEntry, specDate);
+                interactor.display_entry();
             }
-            else if (myChoice == "3"){
-                journal.load_journal("Entries.txt");
-            }
-            else if (myChoice == "4"){
-                journal.save_journal(myEntry, specDate);
-            }
+            
+            // else if (myChoice == "3"){
+            //     journal.load_journal("Entries.txt");
+            // }
+
+            // else if (myChoice == "4"){
+            //     journal.save_journal(myEntry, specDate);
+            // }
 
         }
 
