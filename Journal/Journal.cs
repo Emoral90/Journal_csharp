@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 public class Journal{
@@ -12,10 +11,12 @@ public class Journal{
         "What was the best part of my day?"
         };
 
-    string[] respones = {};
+    string Entries = "Entries.txt";
+    
 
     // Constructor
-    public Journal(){}
+    // public Journal(){}
+    Interactor interactor = new Interactor();
 
     // Methods
     public void display_prompt(){
@@ -29,7 +30,6 @@ public class Journal{
 
     }
 
-    
 
     // Load the journal from a text file
 //     public void load_journal(File file){
@@ -45,12 +45,25 @@ public class Journal{
         
 //     }
 
-//     // Save the previously made journal entry to a file
-//     public void save_journal(string journal_entry, string date){
-//         using(StreamWriter out_file = new StreamWriter(journal_entry)){
-//             out_file.WriteLine(journal_entry);
-//             out_file.WriteLine(date);
-//         }
-//         Console.WriteLine(out_file);
-//     }
+    // Save the previously made journal entry to a file
+    public void save_journal(string myEntry){
+        var journal_lines = File.ReadLines(myEntry);
+
+        using(StreamWriter out_file = new StreamWriter(Entries, true)){
+
+            out_file.WriteLine(myEntry);
+
+            foreach (string line in journal_lines)
+            {
+                Console.WriteLine(line);
+            }
+            // return out_file;
+        }
+    }
+
+        public void display_whole_journal(System.IO.StreamWriter inputFile){
+            
+
+    }
+
 }
