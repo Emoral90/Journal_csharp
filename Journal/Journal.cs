@@ -32,18 +32,18 @@ public class Journal{
 
 
     // Load the journal from a text file
-//     public void load_journal(File file){
-//         file = "Entries.txt";
-//         string[] lines = System.IO.ReadAllLines(file);
+    public void load_journal(File file){
+        file = "Entries.txt";
+        string[] lines = System.IO.ReadAllLines(file);
 
-//         foreach (string line in lines){
-//             string[] parts = line.Split(",");
-//             string answer = parts[0];
-//             string date = parts[1];
-//             Console.WriteLine(line);
-//         }
+        foreach (string line in lines){
+            string[] parts = line.Split(",");
+            string answer = parts[0];
+            string date = parts[1];
+            Console.WriteLine(line);
+        }
         
-//     }
+    }
 
     // Save the previously made journal entry to a file
     public void save_journal(string myEntry){
