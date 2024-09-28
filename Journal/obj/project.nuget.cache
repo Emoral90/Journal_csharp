@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UERcKuazk625fypuEevdHWxBoMUcYdUFs7pZOo3hcU/tLS03KdRk7iWeGYhvZCIpxnYnf0581xzoZaka+Y/lPQ==",
+  "dgSpecHash": "LETn6Fr0rAs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lengu\\Desktop\\School\\CSE 210 Programming with classes (c#)\\Journal_csharp\\Journal\\Journal.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\moral\\OneDrive\\Desktop\\School\\cse210\\Journal_csharp\\Journal\\Journal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moral\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\moral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\moral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\moral\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
+  ],
   "logs": []
 }
